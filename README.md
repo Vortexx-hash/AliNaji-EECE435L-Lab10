@@ -15,7 +15,6 @@ Repository: https://github.com/Vortexx-hash/AliNaji-EECE435L-Lab10
 - `deploy.py`: creates a local release, checks its output, and packages it.
 - `Lab10_Report_Ali_Naji.docx`: the lab report with screenshot placeholders.
 - `github_link.txt`: repository link for the Moodle submission.
-- `docs/JENKINS_STEPS.md`: dashboard settings, screenshots, and submission steps.
 
 ## Run locally on Windows
 
@@ -108,8 +107,8 @@ View is also installed to help capture the successful stages.
 
 Replace all screenshot placeholders in the report using one successful Jenkins
 build, save the Word document, and submit it with `Jenkinsfile_Ali_Naji` and
-`github_link.txt` as required by Moodle. See `docs/JENKINS_STEPS.md` for the
-exact screenshots. Keep `Jenkins_admin.txt` private and outside the repository.
+`github_link.txt` as required by Moodle. The report describes each required
+screenshot. Keep `Jenkins_admin.txt` private and outside the repository.
 
 ## References
 
