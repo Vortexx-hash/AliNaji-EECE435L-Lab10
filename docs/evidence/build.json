@@ -1,0 +1,94 @@
+{
+    "number":  4,
+    "result":  "SUCCESS",
+    "url":  "http://localhost:8080/job/Python-CI-CD/4/",
+    "timestamp":  1795260970261,
+    "duration":  63100,
+    "artifacts":  [
+                      {
+                          "displayPath":  "ali-naji-lab10.zip",
+                          "fileName":  "ali-naji-lab10.zip",
+                          "relativePath":  "dist/ali-naji-lab10.zip"
+                      },
+                      {
+                          "displayPath":  "bandit.json",
+                          "fileName":  "bandit.json",
+                          "relativePath":  "reports/bandit.json"
+                      },
+                      {
+                          "displayPath":  "bandit.txt",
+                          "fileName":  "bandit.txt",
+                          "relativePath":  "reports/bandit.txt"
+                      },
+                      {
+                          "displayPath":  "coverage.txt",
+                          "fileName":  "coverage.txt",
+                          "relativePath":  "reports/coverage.txt"
+                      },
+                      {
+                          "displayPath":  "coverage.xml",
+                          "fileName":  "coverage.xml",
+                          "relativePath":  "reports/coverage.xml"
+                      },
+                      {
+                          "displayPath":  "deployment-smoke.txt",
+                          "fileName":  "deployment-smoke.txt",
+                          "relativePath":  "reports/deployment-smoke.txt"
+                      },
+                      {
+                          "displayPath":  "deployment.json",
+                          "fileName":  "deployment.json",
+                          "relativePath":  "reports/deployment.json"
+                      },
+                      {
+                          "displayPath":  "app_py.html",
+                          "fileName":  "app_py.html",
+                          "relativePath":  "reports/htmlcov/app_py.html"
+                      },
+                      {
+                          "displayPath":  "class_index.html",
+                          "fileName":  "class_index.html",
+                          "relativePath":  "reports/htmlcov/class_index.html"
+                      },
+                      {
+                          "displayPath":  "coverage_html_cb_497bf287.js",
+                          "fileName":  "coverage_html_cb_497bf287.js",
+                          "relativePath":  "reports/htmlcov/coverage_html_cb_497bf287.js"
+                      },
+                      {
+                          "displayPath":  "favicon_32_cb_58284776.png",
+                          "fileName":  "favicon_32_cb_58284776.png",
+                          "relativePath":  "reports/htmlcov/favicon_32_cb_58284776.png"
+                      },
+                      {
+                          "displayPath":  "function_index.html",
+                          "fileName":  "function_index.html",
+                          "relativePath":  "reports/htmlcov/function_index.html"
+                      },
+                      {
+                          "displayPath":  "index.html",
+                          "fileName":  "index.html",
+                          "relativePath":  "reports/htmlcov/index.html"
+                      },
+                      {
+                          "displayPath":  "keybd_closed_cb_ce680311.png",
+                          "fileName":  "keybd_closed_cb_ce680311.png",
+                          "relativePath":  "reports/htmlcov/keybd_closed_cb_ce680311.png"
+                      },
+                      {
+                          "displayPath":  "status.json",
+                          "fileName":  "status.json",
+                          "relativePath":  "reports/htmlcov/status.json"
+                      },
+                      {
+                          "displayPath":  "style_cb_dca529e9.css",
+                          "fileName":  "style_cb_dca529e9.css",
+                          "relativePath":  "reports/htmlcov/style_cb_dca529e9.css"
+                      },
+                      {
+                          "displayPath":  "tests.xml",
+                          "fileName":  "tests.xml",
+                          "relativePath":  "reports/tests.xml"
+                      }
+                  ]
+}

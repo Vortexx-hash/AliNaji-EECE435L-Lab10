@@ -1,0 +1,235 @@
+Started by user admin
+Obtained Jenkinsfile_Ali_Naji from git https://github.com/Vortexx-hash/AliNaji-EECE435L-Lab10.git
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in C:\Users\jenkins_svc\AppData\Local\Jenkins\.jenkins\workspace\Python-CI-CD
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Declarative: Checkout SCM)
+[Pipeline] checkout
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Vortexx-hash/AliNaji-EECE435L-Lab10.git
+ > git.exe init C:\Users\jenkins_svc\AppData\Local\Jenkins\.jenkins\workspace\Python-CI-CD # timeout=10
+Fetching upstream changes from https://github.com/Vortexx-hash/AliNaji-EECE435L-Lab10.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.51.0.windows.1'
+ > git.exe fetch --tags --force --progress -- https://github.com/Vortexx-hash/AliNaji-EECE435L-Lab10.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/Vortexx-hash/AliNaji-EECE435L-Lab10.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
+Checking out Revision bdf8cbef6e40ec2390d29494a59010f6207357ce (refs/remotes/origin/main)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f bdf8cbef6e40ec2390d29494a59010f6207357ce # timeout=10
+Commit message: "Configure service accessible Python default and document Jenkins submission steps"
+ > git.exe rev-list --no-walk 334ef189503f8bbc6a47135882537b1edf13759b # timeout=10
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] timeout
+Timeout set to expire in 15 min
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Setup)
+[Pipeline] script
+[Pipeline] {
+[Pipeline] isUnix
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] isUnix
+[Pipeline] bat
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] isUnix
+[Pipeline] bat
+Collecting flake8==7.3.0
+  Using cached flake8-7.3.0-py2.py3-none-any.whl (57 kB)
+Collecting pytest==8.4.2
+  Using cached pytest-8.4.2-py3-none-any.whl (365 kB)
+Collecting coverage==7.10.7
+  Using cached coverage-7.10.7-cp310-cp310-win_amd64.whl (221 kB)
+Collecting bandit==1.8.6
+  Using cached bandit-1.8.6-py3-none-any.whl (133 kB)
+Collecting mccabe<0.8.0,>=0.7.0
+  Using cached mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+Collecting pyflakes<3.5.0,>=3.4.0
+  Using cached pyflakes-3.4.0-py2.py3-none-any.whl (63 kB)
+Collecting pycodestyle<2.15.0,>=2.14.0
+  Using cached pycodestyle-2.14.0-py2.py3-none-any.whl (31 kB)
+Collecting exceptiongroup>=1
+  Using cached exceptiongroup-1.3.2-py3-none-any.whl (16 kB)
+Collecting packaging>=20
+  Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Collecting tomli>=1
+  Using cached tomli-2.5.0-py3-none-any.whl (14 kB)
+Collecting iniconfig>=1
+  Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Collecting pygments>=2.7.2
+  Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Collecting colorama>=0.4
+  Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Collecting pluggy<2,>=1.5
+  Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Collecting rich
+  Using cached rich-15.0.0-py3-none-any.whl (310 kB)
+Collecting stevedore>=1.20.0
+  Using cached stevedore-5.8.0-py3-none-any.whl (54 kB)
+Collecting PyYAML>=5.3.1
+  Using cached pyyaml-6.0.4-cp310-cp310-win_amd64.whl (161 kB)
+Collecting typing-extensions>=4.6.0
+  Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Collecting markdown-it-py>=2.2.0
+  Using cached markdown_it_py-4.3.0-py3-none-any.whl (96 kB)
+Collecting mdurl~=0.1
+  Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: typing-extensions, tomli, stevedore, PyYAML, pygments, pyflakes, pycodestyle, pluggy, packaging, mdurl, mccabe, iniconfig, coverage, colorama, markdown-it-py, flake8, exceptiongroup, rich, pytest, bandit
+Successfully installed PyYAML-6.0.4 bandit-1.8.6 colorama-0.4.6 coverage-7.10.7 exceptiongroup-1.3.2 flake8-7.3.0 iniconfig-2.3.1 markdown-it-py-4.3.0 mccabe-0.7.0 mdurl-0.1.2 packaging-26.3 pluggy-1.7.0 pycodestyle-2.14.0 pyflakes-3.4.0 pygments-2.21.0 pytest-8.4.2 rich-15.0.0 stevedore-5.8.0 tomli-2.5.0 typing-extensions-4.16.0
+[Pipeline] isUnix
+[Pipeline] bat
+[Pipeline] }
+[Pipeline] // script
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Lint)
+[Pipeline] script
+[Pipeline] {
+[Pipeline] isUnix
+[Pipeline] bat
+[Pipeline] }
+[Pipeline] // script
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Test)
+[Pipeline] script
+[Pipeline] {
+[Pipeline] isUnix
+[Pipeline] bat
+============================= test session starts =============================
+platform win32 -- Python 3.10.11, pytest-8.4.2, pluggy-1.7.0 -- C:\Users\jenkins_svc\AppData\Local\Jenkins\.jenkins\workspace\Python-CI-CD\venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\jenkins_svc\AppData\Local\Jenkins\.jenkins\workspace\Python-CI-CD
+configfile: pytest.ini
+testpaths: tests
+collecting ... collected 4 items
+
+tests/test_app.py::TestApp::test_another_name PASSED                     [ 25%]
+tests/test_app.py::TestApp::test_command_line PASSED                     [ 50%]
+tests/test_app.py::TestApp::test_empty_name PASSED                       [ 75%]
+tests/test_app.py::TestApp::test_greet PASSED                            [100%]
+
+- generated xml file: C:\Users\jenkins_svc\AppData\Local\Jenkins\.jenkins\workspace\Python-CI-CD\reports\tests.xml -
+============================== 4 passed in 0.04s ==============================
+[Pipeline] }
+[Pipeline] // script
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Coverage)
+[Pipeline] script
+[Pipeline] {
+[Pipeline] isUnix
+[Pipeline] bat
+============================= test session starts =============================
+platform win32 -- Python 3.10.11, pytest-8.4.2, pluggy-1.7.0 -- C:\Users\jenkins_svc\AppData\Local\Jenkins\.jenkins\workspace\Python-CI-CD\venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\jenkins_svc\AppData\Local\Jenkins\.jenkins\workspace\Python-CI-CD
+configfile: pytest.ini
+testpaths: tests
+collecting ... collected 4 items
+
+tests/test_app.py::TestApp::test_another_name PASSED                     [ 25%]
+tests/test_app.py::TestApp::test_command_line PASSED                     [ 50%]
+tests/test_app.py::TestApp::test_empty_name PASSED                       [ 75%]
+tests/test_app.py::TestApp::test_greet PASSED                            [100%]
+
+============================== 4 passed in 0.02s ==============================
+[Pipeline] isUnix
+[Pipeline] bat
+Wrote XML report to reports/coverage.xml
+[Pipeline] isUnix
+[Pipeline] bat
+Wrote HTML report to reports/htmlcov\index.html
+[Pipeline] isUnix
+[Pipeline] bat
+[Pipeline] isUnix
+[Pipeline] bat
+Name     Stmts   Miss Branch BrPart  Cover   Missing
+----------------------------------------------------
+app.py       4      0      2      0   100%
+----------------------------------------------------
+TOTAL        4      0      2      0   100%
+[Pipeline] }
+[Pipeline] // script
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Security Scan)
+[Pipeline] script
+[Pipeline] {
+[Pipeline] isUnix
+[Pipeline] bat
+[main]	INFO	profile include tests: None
+[main]	INFO	profile exclude tests: None
+[main]	INFO	cli include tests: None
+[main]	INFO	cli exclude tests: None
+[json]	INFO	JSON output written to file: reports/bandit.json
+[Pipeline] isUnix
+[Pipeline] bat
+[main]	INFO	profile include tests: None
+[main]	INFO	profile exclude tests: None
+[main]	INFO	cli include tests: None
+[main]	INFO	cli exclude tests: None
+[main]	INFO	running on Python 3.10.11
+[text]	INFO	Text output written to file: reports/bandit.txt
+[Pipeline] }
+[Pipeline] // script
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Deploy)
+[Pipeline] script
+[Pipeline] {
+[Pipeline] isUnix
+[Pipeline] bat
+Deployed application to: C:\Users\jenkins_svc\AppData\Local\Jenkins\.jenkins\deployments\Python-CI-CD\build-4
+Deployment smoke test: PASS
+Hello, World from Ali Naji!
+[Pipeline] }
+[Pipeline] // script
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Declarative: Post Actions)
+[Pipeline] script
+[Pipeline] {
+[Pipeline] junit
+Recording test results
+[Checks API] No suitable checks publisher found.
+[Pipeline] archiveArtifacts
+Archiving artifacts
+Recording fingerprints
+[Pipeline] deleteDir
+[Pipeline] }
+[Pipeline] // script
+[Pipeline] echo
+All checks passed and the local deployment smoke test passed.
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // timeout
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS

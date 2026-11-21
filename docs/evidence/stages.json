@@ -1,0 +1,135 @@
+{
+    "_links":  {
+                   "self":  {
+                                "href":  "/job/Python-CI-CD/4/wfapi/describe"
+                            },
+                   "changesets":  {
+                                      "href":  "/job/Python-CI-CD/4/wfapi/changesets"
+                                  },
+                   "artifacts":  {
+                                     "href":  "/job/Python-CI-CD/4/wfapi/artifacts"
+                                 }
+               },
+    "id":  "4",
+    "name":  "#4",
+    "status":  "SUCCESS",
+    "startTimeMillis":  1795260970266,
+    "endTimeMillis":  1795261033366,
+    "durationMillis":  63100,
+    "queueDurationMillis":  5,
+    "pauseDurationMillis":  0,
+    "stages":  [
+                   {
+                       "_links":  {
+                                      "self":  {
+                                                   "href":  "/job/Python-CI-CD/4/execution/node/6/wfapi/describe"
+                                               }
+                                  },
+                       "id":  "6",
+                       "name":  "Declarative: Checkout SCM",
+                       "execNode":  "",
+                       "status":  "SUCCESS",
+                       "startTimeMillis":  1795260972043,
+                       "durationMillis":  1717,
+                       "pauseDurationMillis":  0
+                   },
+                   {
+                       "_links":  {
+                                      "self":  {
+                                                   "href":  "/job/Python-CI-CD/4/execution/node/17/wfapi/describe"
+                                               }
+                                  },
+                       "id":  "17",
+                       "name":  "Setup",
+                       "execNode":  "",
+                       "status":  "SUCCESS",
+                       "startTimeMillis":  1795260973842,
+                       "durationMillis":  50389,
+                       "pauseDurationMillis":  0
+                   },
+                   {
+                       "_links":  {
+                                      "self":  {
+                                                   "href":  "/job/Python-CI-CD/4/execution/node/36/wfapi/describe"
+                                               }
+                                  },
+                       "id":  "36",
+                       "name":  "Lint",
+                       "execNode":  "",
+                       "status":  "SUCCESS",
+                       "startTimeMillis":  1795261024241,
+                       "durationMillis":  1082,
+                       "pauseDurationMillis":  0
+                   },
+                   {
+                       "_links":  {
+                                      "self":  {
+                                                   "href":  "/job/Python-CI-CD/4/execution/node/46/wfapi/describe"
+                                               }
+                                  },
+                       "id":  "46",
+                       "name":  "Test",
+                       "execNode":  "",
+                       "status":  "SUCCESS",
+                       "startTimeMillis":  1795261025349,
+                       "durationMillis":  950,
+                       "pauseDurationMillis":  0
+                   },
+                   {
+                       "_links":  {
+                                      "self":  {
+                                                   "href":  "/job/Python-CI-CD/4/execution/node/56/wfapi/describe"
+                                               }
+                                  },
+                       "id":  "56",
+                       "name":  "Coverage",
+                       "execNode":  "",
+                       "status":  "SUCCESS",
+                       "startTimeMillis":  1795261026310,
+                       "durationMillis":  3561,
+                       "pauseDurationMillis":  0
+                   },
+                   {
+                       "_links":  {
+                                      "self":  {
+                                                   "href":  "/job/Python-CI-CD/4/execution/node/74/wfapi/describe"
+                                               }
+                                  },
+                       "id":  "74",
+                       "name":  "Security Scan",
+                       "execNode":  "",
+                       "status":  "SUCCESS",
+                       "startTimeMillis":  1795261029887,
+                       "durationMillis":  1932,
+                       "pauseDurationMillis":  0
+                   },
+                   {
+                       "_links":  {
+                                      "self":  {
+                                                   "href":  "/job/Python-CI-CD/4/execution/node/86/wfapi/describe"
+                                               }
+                                  },
+                       "id":  "86",
+                       "name":  "Deploy",
+                       "execNode":  "",
+                       "status":  "SUCCESS",
+                       "startTimeMillis":  1795261031829,
+                       "durationMillis":  714,
+                       "pauseDurationMillis":  0
+                   },
+                   {
+                       "_links":  {
+                                      "self":  {
+                                                   "href":  "/job/Python-CI-CD/4/execution/node/96/wfapi/describe"
+                                               }
+                                  },
+                       "id":  "96",
+                       "name":  "Declarative: Post Actions",
+                       "execNode":  "",
+                       "status":  "SUCCESS",
+                       "startTimeMillis":  1795261032558,
+                       "durationMillis":  697,
+                       "pauseDurationMillis":  0
+                   }
+               ]
+}
