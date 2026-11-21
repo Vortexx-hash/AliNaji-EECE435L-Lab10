@@ -18,7 +18,7 @@ pipeline {
     }
 
     parameters {
-        string(name: 'PYTHON_EXECUTABLE', defaultValue: 'python',
+        string(name: 'PYTHON_EXECUTABLE', defaultValue: 'C:/Users/Public/JenkinsTools/Python310/python.exe',
                description: 'Python 3.10+ executable available to the Jenkins service account. An absolute path is allowed; omit surrounding quotes.')
     }
 
